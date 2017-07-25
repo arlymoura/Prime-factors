@@ -1,0 +1,16 @@
+#!/usr/bin/ruby
+# -*- coding: utf-8 -*-
+
+puts "Entre com o número";
+n = gets.chomp.to_i();
+divisores = [];
+d = 2;
+while (n > 1)
+    if (n%d == 0)
+        n = n/d;
+        divisores << d;
+    else
+        d += 1;
+    end
+end
+puts divisores;
